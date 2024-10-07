@@ -6,19 +6,14 @@
 /*   By: gbriel <gbriel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 20:58:40 by gbriel            #+#    #+#             */
-/*   Updated: 2024/10/03 21:15:47 by gbriel           ###   ########.fr       */
+/*   Updated: 2024/10/05 19:12:41 by gbriel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+int ft_isalpha(int c);
 
 int ft_isalpha(int c)
 {
     return ((c >= 'A' && c <= 'Z')
      || (c >= 'a' && c <= 'z'));
-}
-
-#include <stdio.h>
-int main()
-{
-    char c = 'a';
-    printf("%d", ft_isalpha(c));
 }
