@@ -3,20 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gbriel <gbriel@student.42.fr>              +#+  +:+       +#+        */
+/*   By: gcosta-m <gcosta-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 18:08:48 by gbriel            #+#    #+#             */
-/*   Updated: 2024/10/05 19:12:55 by gbriel           ###   ########.fr       */
+/*   Updated: 2024/10/08 13:07:30 by gcosta-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii(int a);
+int	ft_isascii(int a);
 
-int ft_isascii(int a)
+int	ft_isascii(int a)
 {
-    if (a >= 0 || a <= 127)
-    {
-        return (1);
-    }
-    return (0);
+	if (a >= 0 || a <= 127)
+	{
+		return (1);
+	}
+	return (0);
 }

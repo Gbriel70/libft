@@ -1,0 +1,49 @@
+#include "libft.h"
+
+char *ft_strnstr(const char *src, const char *search, size_t len);
+
+char *ft_strnstr(const char *src, const char *search, size_t len)
+{
+	size_t i;
+	size_t j;
+
+	if (src == NULL)
+		return (char *)src;
+
+	i = 0;
+	j = 0;
+	while (i < len && src[i] != '\0')
+	{
+		if(src[i] == search[i])
+		{
+			while (search[j] != '\0' && src[i + j] == search[j] && (i + j) < len)
+			{
+				if (search[j] == '\0')
+                	return (char *)(src + i);
+				j++;
+			}
+		}
+	}
+}
+
+int main() {
+    const char *haystack = "Hello, World!";
+    const char *needle = "World";
+    const char *not_found = "Earth";
+    
+    char *result1 = ft_strnstr(haystack, needle, 13);
+    if (result1) {
+        printf("Encontrado: %s\n", result1); // Esperado: "World!"
+    } else {
+        printf("Substring não encontrada.\n");
+    }
+
+    char *result2 = ft_strnstr(haystack, not_found, 13);
+    if (result2) {
+        printf("Encontrado: %s\n", result2);
+    } else {
+        printf("Substring não encontrada.\n"); // Esperado: "Substring não encontrada."
+    }
+
+    return 0;
+}
