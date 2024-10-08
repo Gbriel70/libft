@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gbriel <gbriel@student.42.fr>              +#+  +:+       +#+        */
+/*   By: gcosta-m <gcosta-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 18:23:45 by gbriel            #+#    #+#             */
-/*   Updated: 2024/10/05 19:13:49 by gbriel           ###   ########.fr       */
+/*   Updated: 2024/10/07 08:57:23 by gcosta-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char *c);
+int ft_strlen(const char *c);
 
-int ft_strlen(char *c)
+int ft_strlen(const char *c)
 {
 	int i;
 

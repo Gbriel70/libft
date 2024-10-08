@@ -1,3 +1,5 @@
+#include "libft.h"
+
 void ft_bzero(void *s, int size);
 
 void ft_bzero(void *s, int size)

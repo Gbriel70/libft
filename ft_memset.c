@@ -1,10 +1,12 @@
 
-void    *ft_memset(void *ptr, int value, int num);
+#include "libft.h"
 
-void    *ft_memset(void *ptr, int value, int num)
+void    *ft_memset(void *ptr, int value, size_t num);
+
+void    *ft_memset(void *ptr, int value, size_t num)
 {
-	int i;
-	unsigned char *p = ptr;
+	size_t i;
+	unsigned char *p = (unsigned char *)ptr;
 	unsigned char val = (unsigned char)value;
 
 	i = 0;
@@ -14,4 +16,14 @@ void    *ft_memset(void *ptr, int value, int num)
 		i++;
 	}
 	return ptr;
+}
+int main()
+{
+	char src[10];
+	int i = 0;
+	size_t n = 3;
+
+	printf("%zu", ft_memset(src, i, n));
+
+	return 0;
 }
