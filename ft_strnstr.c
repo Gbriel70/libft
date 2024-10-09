@@ -7,23 +7,25 @@ char *ft_strnstr(const char *src, const char *search, size_t len)
 	size_t i;
 	size_t j;
 
-	if (src == NULL)
+	if (search[0] == '\0')
 		return (char *)src;
 
 	i = 0;
-	j = 0;
-	while (i < len && src[i] != '\0')
+	while (i < len && src[0] != '\0')
 	{
-		if(src[i] == search[i])
+		if(src[i] == search[0])
 		{
+			j = 0;
 			while (search[j] != '\0' && src[i + j] == search[j] && (i + j) < len)
 			{
-				if (search[j] == '\0')
-                	return (char *)(src + i);
 				j++;
 			}
+			if (search[j] == '\0')
+                return (char *)(src + i);
 		}
+		i++;
 	}
+	return NULL;
 }
 
 int main() {

@@ -17,7 +17,7 @@ void    *ft_memset(void *ptr, int value, size_t num)
 	}
 	return ptr;
 }
-int main()
+/*int main()
 {
 	char src[10];
 	int i = 0;
@@ -26,4 +26,4 @@ int main()
 	printf("%zu", ft_memset(src, i, n));
 
 	return 0;
-}
+}*/
