@@ -18,11 +18,11 @@ char *ft_strrchr(const char *str, int c)
 	return (char *)last;
 }
 
-int main()
+/*int main()
 {
 	char str[] = "aoaoaoa ooaao";
 	char c = 'o';
 
 	printf("%s", ft_strrchr(str, c));
 	return 0;
-}
+}*/

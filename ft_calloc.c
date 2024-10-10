@@ -15,9 +15,8 @@ void *ft_calloc(size_t num, size_t size)
     return (p);
 }
 
-#include <stdio.h>
 
-int main()
+/*int main()
 {
     int *arr = (int *)ft_calloc(5, sizeof(int));
 
@@ -32,4 +31,4 @@ int main()
 
     free(arr);
     return 0;
-}
+}*/

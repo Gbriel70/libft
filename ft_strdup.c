@@ -20,11 +20,11 @@ char *ft_strdup(const char *str)
     return (char *)dup;
 }
 
-int main()
+/*int main()
 {
     char str[] = "aaaaa";
 
     printf("%s", ft_strdup(str));
 
     return 0;
-}
+}*/

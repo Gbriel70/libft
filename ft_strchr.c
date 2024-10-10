@@ -19,7 +19,7 @@ char *ft_strchr(const char *str, int c)
 	return(0);
 }
 
-int main()
+/*int main()
 {
 	char str[] = "bola";
 	char c  = 'a';
@@ -27,4 +27,4 @@ int main()
 	printf("%s", ft_strchr(str, c));
 
 	return 0;
-}
+}*/
