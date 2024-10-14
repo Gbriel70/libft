@@ -9,10 +9,10 @@ int ft_toupper(int str)
 	return (str);
 }
 
-int main()
+/*int main()
 {
 	char c = 'a';
 
 	printf("%c", ft_toupper(c));
 	return 0;
-}
+}*/
