@@ -17,7 +17,7 @@ void *ft_memchr(const void *s, int value, size_t n)
 	return (NULL);
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 #include <string.h>
 
 int main(void)
@@ -31,5 +31,5 @@ int main(void)
         printf("O byte não foi encontrado.\n");
 
     return 0;
-}
+}*/
 

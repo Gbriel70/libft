@@ -9,15 +9,16 @@ char *ft_strdup(const char *str)
     int i;
 
     len = ft_strlen(str);
-    dup = (char *)malloc(len + 1);
+    dup = malloc(len + 1);
     i = 0;    
-    while (str[i] != '\0')
+    while (i < len)
     {
         dup[i] = str[i];
         i++;
     }
+	dup[i] = '\0';
 
-    return (char *)dup;
+    return dup;
 }
 
 /*int main()

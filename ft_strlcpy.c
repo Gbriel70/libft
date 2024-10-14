@@ -20,7 +20,7 @@ size_t ft_strlcpy(char *dest, const char *src, size_t size)
 	return(ft_strlen(dest));
 }
 
-int main()
+/*int main()
 {
 	char src[] = "teste";
 	char dest[] = "";
@@ -28,4 +28,4 @@ int main()
 
 	printf("%zu", ft_strlcpy(dest, src, size));
 	return 0;
-}
+}*/

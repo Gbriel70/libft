@@ -24,7 +24,7 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
     return(resp);
 }
 
-#include <ctype.h>
+/*#include <ctype.h>
 char to_uppercase(unsigned int i, char c)
 {
     return (char)toupper(c);  // Converte para maiúscula
@@ -36,4 +36,4 @@ int main()
     printf("%s\n", result);  // Saída: 42SP
     free(result);  // Não se esqueça de liberar a memória!
     return 0;
-}
+}*/

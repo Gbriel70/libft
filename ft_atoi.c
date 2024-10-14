@@ -30,7 +30,7 @@ int ft_atoi(const char *str)
 	return (res * sing);
 }
 
-int main() {
+/*int main() {
     char str1[] = "  --123";
     char str2[] = "42abc";
     char str3[] = "   +56";
@@ -40,4 +40,4 @@ int main() {
     printf("%d\n", ft_atoi(str3));  // Saída: 56
 
     return 0;
-}
+}*/

@@ -1,11 +1,13 @@
 #include "libft.h"
 
+void *ft_memmove(void *dest, void *src, size_t size);
+
 void *ft_memmove(void *dest, void *src, size_t size)
 {
     unsigned char *d = (unsigned char *)dest;
 	unsigned char *s = (unsigned char *)src;
 
-	if (d < s || d >= s + size)
+	if (d < s)
 	{
 		while(size--)
 		{
@@ -24,7 +26,7 @@ void *ft_memmove(void *dest, void *src, size_t size)
 	return (dest);
 }
 
-int main()
+/*int main()
 {
   char source[] = "Hello, World!";
     char destination[20];
@@ -43,4 +45,4 @@ int main()
     printf("\n");
 
     return 0;
-}
+}*/

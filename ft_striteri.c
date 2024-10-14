@@ -16,7 +16,7 @@ void ft_striteri(char *s, void (*f)(unsigned int, char *))
     }
 }
 
-#include <ctype.h>
+/*#include <ctype.h>
 void to_uppercase(unsigned int i, char *c)
 {
     if (*c)
@@ -29,4 +29,4 @@ int main()
     ft_striteri(str, to_uppercase);
     printf("%s\n", str);  // Saída: 42 CADETE
     return 0;
-}
+}*/

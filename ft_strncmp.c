@@ -19,11 +19,11 @@ int ft_strncmp(const char *src, char *dest, size_t n)
 	return(0);
 }
 
-int main()
+/*int main()
 {
 	char str[] = "teste";
 	char dest[] = "teste";
 	size_t n = 2;
 
 	printf("%d", ft_strncmp(str, dest, n));
-}
+}*/

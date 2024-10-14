@@ -16,11 +16,11 @@ char *ft_strtrim(char const *s1, char const *set)
 	return (ft_substr(s1, 0 , x + 1 ));
 }
 
-int main()
+/*int main()
 {
 	char s;
 	char set;
 	printf("%s", ft_strtrim(&s, &set));
 	printf("%d", strtrim(&s, &set));
 	return 0;
-}
+}*/

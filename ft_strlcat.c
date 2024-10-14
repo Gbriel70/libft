@@ -30,7 +30,7 @@ size_t ft_strlcat(char *dest, const char *src, size_t size)
 	return (dest_len + src_len);
 }
 
-int main(void)
+/*int main(void)
 {
     char dest[20] = "Hello";   // Buffer de destino
     const char *src = " World"; // String de origem
@@ -53,4 +53,4 @@ int main(void)
 
 
     return 0;
-}
+}*/

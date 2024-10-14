@@ -18,7 +18,7 @@ int ft_memcmp(const void *ptr1, const void *ptr2, size_t num)
 	return (0);
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 
 int ft_memcmp(const void *ptr1, const void *ptr2, size_t num);
 
@@ -40,4 +40,4 @@ int main() {
     printf("Comparando str1 e str3 até 4 bytes: %d\n", result3); // Esperado: 0
 
     return 0;
-}
+}*/

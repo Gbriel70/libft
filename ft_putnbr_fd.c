@@ -6,6 +6,7 @@ void ft_putnbr_fd(int n, int fd)
 {
     unsigned int nb;
 
+	nb = n;
     if (nb <  0)
     {
         ft_putchar_fd('-', fd);

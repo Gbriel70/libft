@@ -5,13 +5,11 @@ void *ft_calloc(size_t num, size_t size);
 void *ft_calloc(size_t num, size_t size)
 {
     void *p;
+	size_t t_size;
 
-    p = (void *)malloc(num * size);
-
-    if (p == NULL)
-        return NULL;
-
-    ft_memset(p, 0, num * size);
+	t_size = size * num;
+    p = malloc(t_size);
+    ft_memset(p, 0, t_size);
     return (p);
 }
 

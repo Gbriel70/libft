@@ -4,23 +4,18 @@ void *ft_memcpy(void *dest, const void *src, size_t size);
 
 void *ft_memcpy(void *dest, const void *src, size_t size)
 {
-    size_t i;
 
     unsigned char *d = (unsigned char *)dest;
     unsigned char *s = (unsigned char *)src;
 
-
-    i = 0;
-    while(i < size)
+    while(size--)
     {
-        d[i] = s[i];
-        i++;
+        *d++ = *s++;
     }
-    d[i] = '\0';
 
     return dest;
 }
-int main()
+/*int main()
 {
   char source[] = "Hello, World!";
     char destination[20];
@@ -39,4 +34,4 @@ int main()
     printf("\n");
 
     return 0;
-}
+}*/

@@ -9,10 +9,10 @@ int ft_tolower(char c)
 	return (c);
 }
 
-int main()
+/*int main()
 {
 	char c = 'A';
 
 	printf("%c", ft_tolower(c));
 	return 0;
-}
+}*/

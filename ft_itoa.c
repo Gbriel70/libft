@@ -63,11 +63,11 @@ char *ft_itoa(int n)
     return (revstr(num));
 }
 
-int main()
+/*int main()
 {
     int n = 1234;
     char *res = ft_itoa(n);
     printf("%s", res);
     free(res);
     return 0;
-}
+}*/

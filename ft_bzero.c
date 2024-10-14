@@ -14,5 +14,4 @@ void	ft_bzero(void *s, int size)
 		p[i] = 0;
 		i++;
 	}
-	return (p);
 }

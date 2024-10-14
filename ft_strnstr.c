@@ -28,7 +28,7 @@ char *ft_strnstr(const char *src, const char *search, size_t len)
 	return NULL;
 }
 
-int main() {
+/*int main() {
     const char *haystack = "Hello, World!";
     const char *needle = "World";
     const char *not_found = "Earth";
@@ -48,4 +48,4 @@ int main() {
     }
 
     return 0;
-}
+}*/
