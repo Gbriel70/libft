@@ -31,7 +31,7 @@ int ft_atoi(const char *str)
 }
 
 int main() {
-    char str1[] = "  -123";
+    char str1[] = "  --123";
     char str2[] = "42abc";
     char str3[] = "   +56";
 
