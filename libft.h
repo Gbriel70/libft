@@ -6,7 +6,7 @@
 /*   By: gcosta-m <gcosta-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 14:01:24 by gcosta-m          #+#    #+#             */
-/*   Updated: 2024/10/15 15:13:24 by gcosta-m         ###   ########.fr       */
+/*   Updated: 2024/10/15 17:09:26 by gcosta-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int					ft_toupper(int str);
 int					ft_tolower(char c);
 
 //matipulating Strings
-int					ft_strlen(const char *c);
+size_t					ft_strlen(const char *c);
 char				*ft_strdup(const char *str);
 char				*ft_strchr(const char *str, int c);
 char				*ft_strrchr(const char *str, int c);
