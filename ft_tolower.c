@@ -1,18 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gcosta-m <gcosta-m@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/15 13:54:11 by gcosta-m          #+#    #+#             */
+/*   Updated: 2024/10/15 13:54:13 by gcosta-m         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-int ft_tolower(char c);
+int	ft_tolower(char c);
 
-int ft_tolower(char c)
+int	ft_tolower(char c)
 {
-	if(c >= 'A' && c <= 'Z')
+	if (c >= 'A' && c <= 'Z')
 		c += 32;
 	return (c);
 }
-
-/*int main()
-{
-	char c = 'A';
-
-	printf("%c", ft_tolower(c));
-	return 0;
-}*/

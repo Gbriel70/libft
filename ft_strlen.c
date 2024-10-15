@@ -6,15 +6,15 @@
 /*   By: gcosta-m <gcosta-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 18:23:45 by gbriel            #+#    #+#             */
-/*   Updated: 2024/10/07 08:57:23 by gcosta-m         ###   ########.fr       */
+/*   Updated: 2024/10/15 13:53:01 by gcosta-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(const char *c);
+int	ft_strlen(const char *c);
 
-int ft_strlen(const char *c)
+int	ft_strlen(const char *c)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (c[i] != '\0')

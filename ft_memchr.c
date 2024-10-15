@@ -1,12 +1,25 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gcosta-m <gcosta-m@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/15 13:45:55 by gcosta-m          #+#    #+#             */
+/*   Updated: 2024/10/15 13:45:59 by gcosta-m         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-void *ft_memchr(const void *s, int value, size_t n);
+void	*ft_memchr(const void *s, int value, size_t n);
 
-void *ft_memchr(const void *s, int value, size_t n)
+void	*ft_memchr(const void *s, int value, size_t n)
 {
-	unsigned char *ptr = (unsigned char *)s;
-	size_t i;
+	unsigned char	*ptr;
+	size_t			i;
 
+	ptr = (unsigned char *)s;
 	i = 0;
 	while (i < n)
 	{
@@ -16,20 +29,3 @@ void *ft_memchr(const void *s, int value, size_t n)
 	}
 	return (NULL);
 }
-
-/*#include <stdio.h>
-#include <string.h>
-
-int main(void)
-{
-    int data[] = {0x12345678, 0x9ABCDEF0, 0xCAFEBABE};
-    unsigned char *found = memchr(data, 0xBE, sizeof(data));
-
-    if (found != NULL)
-        printf("O byte '0xBE' foi encontrado na posição: %ld\n", found - (unsigned char *)data);
-    else
-        printf("O byte não foi encontrado.\n");
-
-    return 0;
-}*/
-

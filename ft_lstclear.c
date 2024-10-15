@@ -1,29 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gcosta-m <gcosta-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/15 13:53:50 by gcosta-m          #+#    #+#             */
-/*   Updated: 2024/10/15 13:53:53 by gcosta-m         ###   ########.fr       */
+/*   Created: 2024/10/15 13:41:29 by gcosta-m          #+#    #+#             */
+/*   Updated: 2024/10/15 13:42:10 by gcosta-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s1, char const *set);
+void	ft_lstclear(t_list **lst, void (*del)(void *));
 
-char	*ft_strtrim(char const *s1, char const *set)
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	size_t	x;
+	t_list	*aux;
 
-	if (*s1 && *set == '\0')
-		return (NULL);
-	while (*s1 && ft_strchr(set, *s1))
-		s1++;
-	x = ft_strlen(s1);
-	while (x && ft_strchr(set, s1[x]))
-		x--;
-	return (ft_substr(s1, 0, x + 1));
+	if (!*lst)
+	{
+		return ;
+	}
+	while (*lst)
+	{
+		aux = (*lst)->next;
+		ft_lstdelone(*lst, del);
+		*lst = aux;
+	}
+	*lst = 0;
 }

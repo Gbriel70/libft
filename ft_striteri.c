@@ -1,32 +1,29 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gcosta-m <gcosta-m@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/15 13:52:17 by gcosta-m          #+#    #+#             */
+/*   Updated: 2024/10/15 13:52:19 by gcosta-m         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-void ft_striteri(char *s, void (*f)(unsigned int, char *));
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 
-void ft_striteri(char *s, void (*f)(unsigned int, char *))
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-    unsigned int i;
+	unsigned int	i;
 
-    if (!s || !f)
-        return;
-    i = 0;
-    while (s[i])
-    {
-        f(i, &s[i]);
-        i++;
-    }
+	if (!s || !f)
+		return ;
+	i = 0;
+	while (s[i])
+	{
+		f(i, &s[i]);
+		i++;
+	}
 }
-
-/*#include <ctype.h>
-void to_uppercase(unsigned int i, char *c)
-{
-    if (*c)
-        *c = (char)toupper(*c);  // Converte o caractere para maiúsculo
-}
-
-int main()
-{
-    char str[] = "bola";
-    ft_striteri(str, to_uppercase);
-    printf("%s\n", str);  // Saída: 42 CADETE
-    return 0;
-}*/

@@ -1,48 +1,41 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gcosta-m <gcosta-m@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/15 13:46:33 by gcosta-m          #+#    #+#             */
+/*   Updated: 2024/10/15 13:46:38 by gcosta-m         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-void *ft_memmove(void *dest, void *src, size_t size);
+void	*ft_memmove(void *dest, void *src, size_t size);
 
-void *ft_memmove(void *dest, void *src, size_t size)
+void	*ft_memmove(void *dest, void *src, size_t size)
 {
-    unsigned char *d = (unsigned char *)dest;
-	unsigned char *s = (unsigned char *)src;
+	unsigned char	*d;
+	unsigned char	*s;
 
+	d = (unsigned char *)dest;
+	s = (unsigned char *)src;
 	if (d < s)
 	{
-		while(size--)
+		while (size--)
 		{
 			*d++ = *s++;
 		}
-	}else 
+	}
+	else
 	{
 		d += size;
 		s += size;
-		while(size--)
+		while (size--)
 		{
 			*(--d) = *(--s);
 		}
 	}
-
 	return (dest);
 }
-
-/*int main()
-{
-  char source[] = "Hello, World!";
-    char destination[20];
-
-    ft_memmove(destination, source, 13);
-    printf("Copia de char: %s\n", destination);
-
-    int srcInts[] = {1, 2, 3, 4, 5};
-    int destInts[5];
-
-    ft_memmove(destInts, srcInts, sizeof(srcInts)); 
-    printf("Copia de int: ");
-    for (int i = 0; i < 4; i++) {
-        printf("%d ", destInts[i]);
-    }
-    printf("\n");
-
-    return 0;
-}*/

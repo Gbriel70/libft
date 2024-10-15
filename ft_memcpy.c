@@ -1,37 +1,29 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gcosta-m <gcosta-m@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/15 13:46:23 by gcosta-m          #+#    #+#             */
+/*   Updated: 2024/10/15 13:46:25 by gcosta-m         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-void *ft_memcpy(void *dest, const void *src, size_t size);
+void	*ft_memcpy(void *dest, const void *src, size_t size);
 
-void *ft_memcpy(void *dest, const void *src, size_t size)
+void	*ft_memcpy(void *dest, const void *src, size_t size)
 {
+	unsigned char	*d;
+	unsigned char	*s;
 
-    unsigned char *d = (unsigned char *)dest;
-    unsigned char *s = (unsigned char *)src;
-
-    while(size--)
-    {
-        *d++ = *s++;
-    }
-
-    return dest;
+	d = (unsigned char *)dest;
+	s = (unsigned char *)src;
+	while (size--)
+	{
+		*d++ = *s++;
+	}
+	return (dest);
 }
-/*int main()
-{
-  char source[] = "Hello, World!";
-    char destination[20];
-
-    ft_memcpy(destination, source, '\0');
-    printf("Copia de char: %s\n", destination);
-
-    int srcInts[] = {1, 2, 3, 4, 5};
-    int destInts[5];
-
-    ft_memcpy(destInts, srcInts, 0); 
-    printf("Copia de int: ");
-    for (int i = 0; i < 4; i++) {
-        printf("%d ", destInts[i]);
-    }
-    printf("\n");
-
-    return 0;
-}*/

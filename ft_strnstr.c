@@ -1,51 +1,40 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gcosta-m <gcosta-m@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/15 13:53:26 by gcosta-m          #+#    #+#             */
+/*   Updated: 2024/10/15 14:22:12 by gcosta-m         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-char *ft_strnstr(const char *src, const char *search, size_t len);
+char	*ft_strnstr(const char *src, const char *search, size_t len);
 
-char *ft_strnstr(const char *src, const char *search, size_t len)
+char	*ft_strnstr(const char *src, const char *search, size_t len)
 {
-	size_t i;
-	size_t j;
+	size_t	i;
+	size_t	j;
 
 	if (search[0] == '\0')
-		return (char *)src;
-
+		return ((char *)src);
 	i = 0;
-	while (i < len && src[0] != '\0')
+	while (i < len && src[i] != '\0')
 	{
-		if(src[i] == search[0])
+		if (src[i] == search[0])
 		{
 			j = 0;
-			while (search[j] != '\0' && src[i + j] == search[j] && (i + j) < len)
+			while (search[j] && src[i + j] == search[j] && (i + j) < len)
 			{
 				j++;
 			}
 			if (search[j] == '\0')
-                return (char *)(src + i);
+				return ((char *)&src[i]);
 		}
 		i++;
 	}
-	return NULL;
+	return (NULL);
 }
-
-/*int main() {
-    const char *haystack = "Hello, World!";
-    const char *needle = "World";
-    const char *not_found = "Earth";
-    
-    char *result1 = ft_strnstr(haystack, needle, 13);
-    if (result1) {
-        printf("Encontrado: %s\n", result1); // Esperado: "World!"
-    } else {
-        printf("Substring não encontrada.\n");
-    }
-
-    char *result2 = ft_strnstr(haystack, not_found, 13);
-    if (result2) {
-        printf("Encontrado: %s\n", result2);
-    } else {
-        printf("Substring não encontrada.\n"); // Esperado: "Substring não encontrada."
-    }
-
-    return 0;
-}*/
