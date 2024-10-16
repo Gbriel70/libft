@@ -6,7 +6,7 @@
 /*   By: gcosta-m <gcosta-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 13:46:33 by gcosta-m          #+#    #+#             */
-/*   Updated: 2024/10/15 13:46:38 by gcosta-m         ###   ########.fr       */
+/*   Updated: 2024/10/16 11:09:29 by gcosta-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memmove(void *dest, void *src, size_t size)
 
 	d = (unsigned char *)dest;
 	s = (unsigned char *)src;
+	if (dest == src)
+		return (dest);
 	if (d < s)
 	{
 		while (size--)

@@ -35,7 +35,9 @@ SRCS		=	ft_atoi.c\
 			ft_strtrim.c\
 			ft_substr.c\
 			ft_tolower.c\
-			ft_toupper.c
+			ft_toupper.c\
+			ft_split.c\
+			ft_striteri.c\
 
 SRC_BONUS = ft_lstadd_back.c\
 			ft_lstadd_front.c\
@@ -72,8 +74,5 @@ re:			fclean all
 bonus:
 			$(MAKE) WITH_BONUS=1 $(NAME)
 
-so:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC)
-	gcc -nostartfiles -shared -o libft.so $(OBJ)
 
 .PHONY:		all clean fclean re so

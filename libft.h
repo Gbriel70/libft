@@ -6,7 +6,7 @@
 /*   By: gcosta-m <gcosta-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 14:01:24 by gcosta-m          #+#    #+#             */
-/*   Updated: 2024/10/15 17:09:26 by gcosta-m         ###   ########.fr       */
+/*   Updated: 2024/10/16 16:24:21 by gcosta-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 # define LIBFT_H
 
 # include <limits.h>
-# include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
 
@@ -30,10 +29,10 @@ int					ft_isdigit(int d);
 int					ft_atoi(const char *str);
 char				*ft_itoa(int n);
 int					ft_toupper(int str);
-int					ft_tolower(char c);
+int					ft_tolower(int c);
 
 //matipulating Strings
-size_t					ft_strlen(const char *c);
+size_t				ft_strlen(const char *c);
 char				*ft_strdup(const char *str);
 char				*ft_strchr(const char *str, int c);
 char				*ft_strrchr(const char *str, int c);
@@ -59,7 +58,7 @@ void				*ft_calloc(size_t num, size_t size);
 
 //SO
 void				ft_putchar_fd(char c, int fd);
-void				ft_putstr_fd(char *s, int fd);
+void				ft_putstr_fd(char const *s, int fd);
 void				ft_putendl_fd(char *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
 

@@ -6,25 +6,20 @@
 /*   By: gcosta-m <gcosta-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 13:47:48 by gcosta-m          #+#    #+#             */
-/*   Updated: 2024/10/15 14:32:53 by gcosta-m         ###   ########.fr       */
+/*   Updated: 2024/10/16 16:23:53 by gcosta-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd);
+void	ft_putstr_fd(char const *s, int fd);
 
-void	ft_putstr_fd(char *s, int fd)
+void	ft_putstr_fd(char const *s, int fd)
 {
-	int	i;
+	int		i;
 
-	if (s != NULL)
-	{
-		i = 0;
+	i = 0;
+	if (s)
 		while (s[i])
-		{
-			write(fd, &s[i], 1);
-			i++;
-		}
-	}
+			write(fd, &s[i++], 1);
 }

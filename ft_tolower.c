@@ -6,15 +6,15 @@
 /*   By: gcosta-m <gcosta-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 13:54:11 by gcosta-m          #+#    #+#             */
-/*   Updated: 2024/10/15 13:54:13 by gcosta-m         ###   ########.fr       */
+/*   Updated: 2024/10/16 10:07:28 by gcosta-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(char c);
+int	ft_tolower(int c);
 
-int	ft_tolower(char c)
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		c += 32;
