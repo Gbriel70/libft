@@ -68,6 +68,32 @@ francinette
 - [![ft_memcpy](https://img.shields.io/badge/LIBFT-ft__memcpy-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_memcpy.c): Copia um bloco de memória para outro.
 - [![ft_memmove](https://img.shields.io/badge/LIBFT-ft__memmove-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_memmove.c): Move um bloco de memória para outro, lidando com sobreposição.
 - [![ft_memchr](https://img.shields.io/badge/LIBFT-ft__memchr-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_memchr.c): Encontra um valor em um bloco de memória.
-- [![ft_memcmp](https://img.shields.io/badge/LIBFT-ft__memcmp-skyblue?style=for-the-badge&logo=42)](https://github
+- [![ft_memcmp](https://img.shields.io/badge/LIBFT-ft__memcmp-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_memcmp.c):Compara dois blocos de memória.
+- [![ft_calloc](https://img.shields.io/badge/LIBFT-ft__calloc-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_calloc.c):Aloca memória e zera a memória alocada.
 
+### Entrada/Saída
+- **ft_putchar_fd**: Escreve um caractere em um file descriptor.
+- **ft_putstr_fd**: Escreve uma string em um file descriptor.
+- **ft_putendl_fd**: Escreve uma string seguida de uma nova linha em um file descriptor.
+- **ft_putnbr_fd**: Escreve um número inteiro em um file descriptor.
+
+### Manipulação de Caracteres
+- **ft_isalpha**: Verifica se o caractere é uma letra.
+- **ft_isalnum**: Verifica se o caractere é uma letra ou dígito.
+- **ft_isascii**: Verifica se o caractere é um ASCII.
+- **ft_isprint**: Verifica se o caractere é imprimível.
+- **ft_split**: Divide uma string em substrings com base em um delimitador.
+
+### Funções Bonus (Lista Encadeada)
+- **ft_lstnew**: Cria um novo nó de lista.
+- **ft_lstadd_front**: Adiciona um novo nó no início da lista.
+- **ft_lstsize**: Retorna o tamanho da lista.
+- **ft_lstlast**: Retorna o último nó da lista.
+- **ft_lstadd_back**: Adiciona um novo nó no final da lista.
+- **ft_lstdelone**: Deleta um nó da lista.
+- **ft_lstclear**: Limpa a lista inteira.
+- **ft_lstiter**: Itera sobre a lista e aplica uma função a cada nó.
+- **ft_lstmap**: Itera sobre a lista, aplica uma função a cada nó e cria uma nova lista com os resultados.
+
+---
 
