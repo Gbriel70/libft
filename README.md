@@ -41,8 +41,8 @@ francinette
 ## Funções da Libft
 
 ### Manipulação de Números
-- [![ft_atoi](https://img.shields.io/badge/LIBFT-ft__atoi-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_atoi.c): Converte uma string para um inteiro.
-- [![ft_itoa](https://img.shields.io/badge/LIBFT-ft__itoa-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_itoa.c): Converte um inteiro para uma string.
+- [![ft_atoi](https://img.shields.io/badge/LIBFT-ft__atoi-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/blob/main/ft_atoi.c): Converte uma string para um inteiro.
+- [![ft_itoa](https://img.shields.io/badge/LIBFT-ft__itoa-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/blob/main/ft_itoa.c): Converte um inteiro para uma string.
 - [![ft_toupper](https://img.shields.io/badge/LIBFT-ft__toupper-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_toupper.c): Converte um caractere para maiúscula.
 - [![ft_tolower](https://img.shields.io/badge/LIBFT-ft__tolower-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_tolower.c): Converte um caractere para minúscula.
 
@@ -95,6 +95,3 @@ francinette
 - [![ft_lstmap](https://img.shields.io/badge/LIBFT-ft__lstmap-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_lstmap.c):Itera sobre a lista, aplica uma função a cada nó e cria uma nova lista com os resultados. 
 
 ---
-
----
-
