@@ -41,7 +41,6 @@ francinette
 ## Funções da Libft
 
 ### Manipulação de Números
-[![ft_isalnum](https://img.shields.io/badge/LIBFT-ft__isalnum-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_isalnum.c)
 - [![ft_atoi](https://img.shields.io/badge/LIBFT-ft__atoi-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_atoi.c): Converte uma string para um inteiro.
 - [![ft_itoa](https://img.shields.io/badge/LIBFT-ft__itoa-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_itoa.c): Converte um inteiro para uma string.
 - [![ft_toupper](https://img.shields.io/badge/LIBFT-ft__toupper-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_toupper.c): Converte um caractere para maiúscula.
@@ -72,28 +71,30 @@ francinette
 - [![ft_calloc](https://img.shields.io/badge/LIBFT-ft__calloc-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_calloc.c):Aloca memória e zera a memória alocada.
 
 ### Entrada/Saída
-- **ft_putchar_fd**: Escreve um caractere em um file descriptor.
-- **ft_putstr_fd**: Escreve uma string em um file descriptor.
-- **ft_putendl_fd**: Escreve uma string seguida de uma nova linha em um file descriptor.
-- **ft_putnbr_fd**: Escreve um número inteiro em um file descriptor.
+- [![ft_putchar_fd](https://img.shields.io/badge/LIBFT-ft__putchar_fd-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_putchar_fd.c): Escreve um caractere em um file descriptor.
+- [![ft_putstr_fd](https://img.shields.io/badge/LIBFT-ft__putstr_fd-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_putstr_fd.c): Escreve uma string em um file descriptor.
+- [![ft_putendl_fd_fd](https://img.shields.io/badge/LIBFT-ft__putendl_fd-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_putendl_fd.c): Escreve uma string seguida de uma nova linha em um file.
+- [![ft_putnbr_fd](https://img.shields.io/badge/LIBFT-ft__putnbr_fd-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_putnbr_fd.c): Escreve um numero inteiro em um file.
 
 ### Manipulação de Caracteres
-- **ft_isalpha**: Verifica se o caractere é uma letra.
-- **ft_isalnum**: Verifica se o caractere é uma letra ou dígito.
-- **ft_isascii**: Verifica se o caractere é um ASCII.
-- **ft_isprint**: Verifica se o caractere é imprimível.
-- **ft_split**: Divide uma string em substrings com base em um delimitador.
+- [![ft_isalpha](https://img.shields.io/badge/LIBFT-ft__isalpha-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_isalpha.c): Verifica se o caractere é uma letra.
+- [![ft_isalnum](https://img.shields.io/badge/LIBFT-ft__isalnum-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_isalnum.c): Verifica se o caractere é uma letra ou um digito.
+- [![ft_isascii](https://img.shields.io/badge/LIBFT-ft__isascii-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_isascii.c): Verifica se o caractere é um ASCII.
+- [![ft_isprint](https://img.shields.io/badge/LIBFT-ft__isprint-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_isprint.c): Verifica se o caractere é imprimivel.
+- [![ft_split](https://img.shields.io/badge/LIBFT-ft__split-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_split.c): Divide uma String em substrings com base em um delimitador.
 
 ### Funções Bonus (Lista Encadeada)
-- **ft_lstnew**: Cria um novo nó de lista.
-- **ft_lstadd_front**: Adiciona um novo nó no início da lista.
-- **ft_lstsize**: Retorna o tamanho da lista.
-- **ft_lstlast**: Retorna o último nó da lista.
-- **ft_lstadd_back**: Adiciona um novo nó no final da lista.
-- **ft_lstdelone**: Deleta um nó da lista.
-- **ft_lstclear**: Limpa a lista inteira.
-- **ft_lstiter**: Itera sobre a lista e aplica uma função a cada nó.
-- **ft_lstmap**: Itera sobre a lista, aplica uma função a cada nó e cria uma nova lista com os resultados.
+- [![ft_lstnew](https://img.shields.io/badge/LIBFT-ft__lstnew-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_lstnew.c):Cria um novo nó de lista. 
+- [![ft_lstadd_front](https://img.shields.io/badge/LIBFT-ft__lstadd__front-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_lstadd_front.c): Adiciona um novo nó no início da lista.
+- [![ft_lstsize](https://img.shields.io/badge/LIBFT-ft__lstsize-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_lstsize.c):Retorna o tamanho da lista.
+- [![ft_lstlast](https://img.shields.io/badge/LIBFT-ft__lstlast-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_lstlast.c):Retorna o ultimo nó da lista.
+- [![ft_lstadd_back](https://img.shields.io/badge/LIBFT-ft__lstadd__back-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_lstadd_back.c):Adiciona um novo nó no final da lista. 
+- [![ft_lstdelone](https://img.shields.io/badge/LIBFT-ft__lstdelone-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft__lstdelone.c):Deleta um nó da lista. 
+- [![ft_lstclear](https://img.shields.io/badge/LIBFT-ft__lstclear-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_lstclear.c):Limpa a lista inteira. 
+- [![ft_lstiter](https://img.shields.io/badge/LIBFT-ft__lstiter-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_lstiter.c):Itera sobre a lista e aplica uma função a cada nó. 
+- [![ft_lstmap](https://img.shields.io/badge/LIBFT-ft__lstmap-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_lstmap.c):Itera sobre a lista, aplica uma função a cada nó e cria uma nova lista com os resultados. 
+
+---
 
 ---
 
