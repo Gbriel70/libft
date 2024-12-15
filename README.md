@@ -1,3 +1,5 @@
+---
+
 # 📚 42sp - Libft
 
 <div align="center"><h1>[125 / 100]</h1></div>
@@ -28,16 +30,18 @@ Libft é o primeiro projeto da 42 School e envolve a criação de uma biblioteca
   ```
   em seus futuros projetos.
 
+## Executar testes
+
+Atualmente, os testes rodam com o Francinette.
+
+```bash
+francinette
+```
 
 ## Funções da Libft
 
 ### Manipulação de Números
-<div>
-  <a href="https://github.com/Gbriel70/libft/ft_isalnum.c">
-    <img src="https://img.shields.io/badge/LIBFT-ft__isalnum-skyblue?style=for-the-badge&logo=42" alt="ft_isalnum">
-  </a>
-  : Verifica se o caractere passado é um dígito (0-9).
-</div>
+-[![ft_isalnum](https://img.shields.io/badge/LIBFT-ft__isalnum-skyblue?style=for-the-badge&logo=42)](https://github.com/Gbriel70/libft/ft_isalnum.c)
 - **ft_atoi**: Converte uma string para um inteiro.
 - **ft_itoa**: Converte um inteiro para uma string.
 - **ft_toupper**: Converte um caractere para maiúscula.
